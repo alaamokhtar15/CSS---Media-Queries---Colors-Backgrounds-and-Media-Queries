@@ -3,6 +3,16 @@
 #EFEFEF
 colors code*/
 
+
+
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #A5A5A5;
+ }
+
+
+
+
  nav p {
      color: #6552D0;
      font-size: xx-large;
@@ -14,12 +24,14 @@ colors code*/
      padding-left: 50px;
  }
 
- body {
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: #A5A5A5;
+ @media (max-width:900px) {
+     nav p {
+         font-size: large;
 
 
+     }
  }
+
 
  nav {
      width: 100%;
@@ -44,6 +56,20 @@ colors code*/
      height: 40px;
  }
 
+
+ @media (max-width:900px) {
+     nav .nav_items {
+         width: 200px;
+         display: flex;
+         flex-direction: column;
+         justify-content: end;
+         margin-left: 10px;
+         gap: 3px;
+     }
+ }
+
+
+
  nav li {
      padding: 10px;
  }
@@ -61,6 +87,14 @@ colors code*/
      text-transform: capitalize;
      color: #6552D0;
      cursor: pointer;
+ }
+
+ @media (max-width:900px) {
+     nav a:link {
+         display: block;
+         font-size: small;
+         margin-bottom: 20px;
+     }
  }
 
  .head {
@@ -82,6 +116,7 @@ colors code*/
      display: flex;
      flex-direction: column;
  }
+
 
  .list {
      list-style-type: none;
@@ -105,11 +140,28 @@ colors code*/
 
  }
 
+ @media (max-width:900px) {
+     .posts {
+         display: block;
+         width: 100%;
+
+     }
+ }
+
  .posts .post {
      background-color: #EFEFEF;
      padding: 10px;
      border-radius: 50px;
  }
+
+ @media (max-width:900px) {
+     .posts .post {
+
+         margin: 10px;
+         padding: 10px;
+     }
+ }
+
 
  .post a:link {
      text-decoration: none;
@@ -164,6 +216,12 @@ colors code*/
      gap: 5px;
  }
 
+ @media (max-width:650px) {
+     .contact {
+         width: 300px;
+     }
+ }
+
  input {
      background-color: aliceblue;
      text-align: center;
@@ -175,6 +233,8 @@ colors code*/
 
  }
 
+
+
  button {
 
      width: 500px;
@@ -183,6 +243,12 @@ colors code*/
      background-color: #6552D0;
      border: none;
      cursor: pointer;
+ }
+
+ @media (max-width:650px) {
+     button {
+         width: 300px;
+     }
  }
 
  button:hover {
